@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0C0B0B;
+    color: #b7b7b7;
+    font-family: 'Rubik', sans-serif;
+}
+
+.app {
+    background: #1a1a1a;
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 60px auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile {
+    display: flex;    
+    flex-direction: row;
+    height: 60%;
+    margin: auto 30px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto 30px;
+    justify-content: space-between;
+}
+
+.profile_info .user {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.profile_info .user .names {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 4px;
+
+}
+
+#name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#username {
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.profile_info .user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.profile_info .profile_edit {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 6px;
+    background: #292929;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.repositories_info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    margin: 30px auto 60px;
+
+    justify-content: center;
+}
+
+.repositories_info .repo_projects, .repo_stars, .repo_follows {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.repo_projects, .repo_stars, .repo_follows {
+    width: 160px;
+    border-radius: 8px;
+    padding: 16px 60px 24px 12px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.info {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.repo_projects {
+    background: #046313;
+}
+
+.repo_stars {
+    background: #044A7D;
+}
+
+.repo_follows{
+    background: #725200;
+}
