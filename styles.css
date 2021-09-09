@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     width: 60%;
-    margin: 60px auto;
+    margin: 120px auto;
     justify-content: center;
     align-content: center;
 }
@@ -125,3 +125,48 @@ body {
 .repo_follows{
     background: #725200;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .profile {
+        display: flex;    
+        flex-direction: column;
+        height: 60%;
+        margin: auto 0;
+    }
+
+    .profile_info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_info .user {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        align-items: center;
+    }
+
+    .profile_info .user .names {
+        align-items: center;
+    }
+
+    .repositories_info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        margin: 30px auto 60px;
+    
+        justify-content: center;
+    }
+  }
